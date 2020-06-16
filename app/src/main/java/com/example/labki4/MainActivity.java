@@ -99,6 +99,5 @@ public class MainActivity extends AppCompatActivity {
             adapter.changeCursor(db.lista());
             adapter.notifyDataSetChanged();
         }
-
     }
 }
