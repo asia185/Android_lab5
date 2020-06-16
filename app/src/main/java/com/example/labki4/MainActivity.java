@@ -84,8 +84,6 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == 1 && resultCode == RESULT_OK){
             Bundle extras = data.getExtras();
-//            String nowy = (String) extras.get("wpis");
-//            target.add(nowy);
             Animal newAnimal = (Animal) extras.getSerializable("newAnimal");
             this.db.dodaj(newAnimal);
             adapter.changeCursor(db.lista());
